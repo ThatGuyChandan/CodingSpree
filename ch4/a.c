@@ -1,15 +1,16 @@
 #include<stdio.h>
 void main(){
+int x;
+printf("enter value of x");
+scanf("%d",&x);
 
-int n;
+switch(x){
+case 1:
+printf("\n You selected 1\n");
+        
+int n,p=1;
 printf("enter the value of n");
 scanf("%d",&n);
-
-switch(n)
-{
-case 1:
-
-int p=1;
 
 while(n>1){
 
@@ -18,29 +19,23 @@ while(n>1){
 
 n=n-1;
 }
-printf("1.factorial of number is %d\n",p);
+printf("factorial is %d",p);
+
 break;
-
 case 2:
-
-int i,c
-
-for(i=2;i<n;i=i+1){
-    if(n%i==0){
-printf("2.not a prime number");
-        break;
-    }
+printf("\n You selected 1\n");
+int a;
+printf("enter the value of a");
+scanf("%d",&a);
+if(a%2==0){
+    printf("even");
 }
-if(n==i){
-    printf("2.prime number\n");
-}
+else;
+printf("odd");
 
-case 3:
-
-exit();
-
-
-
+break;
+default:
+printf("exit");
 
 
 }
