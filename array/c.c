@@ -14,10 +14,10 @@ void main(){
     for(i=0;i<5;i++){
         a[i]=a[i]*a[0];
     }
-    i=0;
+    for(i=0;i<5;i++){
     if(a[i]<6){
         printf("\nnumb smaller than 6=%d",a[i]);
-        i++;
+    }
     }
     for(i=0;i<5;i++){
         sum=sum+a[i];
