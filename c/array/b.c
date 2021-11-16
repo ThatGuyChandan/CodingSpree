@@ -1,8 +1,9 @@
 #include<stdio.h>
 void main(){
-    int n,a[n],b[n],c[],i,sum=0;
+    int n,i,sum=0;
     printf("value of n=");
     scanf("%d",&n);
+    int a[n],b[n],c[n];
     for(i=0;i<n;i++){
         printf("\nenter the price ");
         scanf("%d",&a[i]);
