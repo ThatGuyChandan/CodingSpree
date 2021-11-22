@@ -1,7 +1,4 @@
 #include<stdio.h>
-
-
-
 int findMaxConsecutiveOnes(int* nums, int numsSize){
     int b[numsSize];
     int count=0,j=0;
