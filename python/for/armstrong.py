@@ -8,4 +8,4 @@ for num in range(1,501):
         
     if s==num:
         print(num,"is armstrong number")    
-    num=num+1
+    
