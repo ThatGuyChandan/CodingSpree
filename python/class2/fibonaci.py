@@ -1,0 +1,20 @@
+n = int(input("enter the term: "))
+
+n1= 0
+n2=1
+count = 0
+
+if n <= 0:
+   print("enter a positive integer")
+elif n == 1:
+   print("Fibonacci sequence upto",n,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while count < n:
+       print(n1)
+       sum = n1 + n2
+       n1 = n2
+       n2 = sum
+       count += 1
+ 
