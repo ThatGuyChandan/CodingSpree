@@ -20,10 +20,4 @@ int findMaxConsecutiveOnes(int* nums, int numsSize){
   return sum;
 }
     
-void main(){
-
-
-
-
-return
-}
+ 
