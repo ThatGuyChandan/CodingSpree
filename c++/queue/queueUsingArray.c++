@@ -3,8 +3,8 @@ using namespace std;
 int front=-1,e=-1;
 int arr[5];
 int arr_size=5;
-void Insert(int num){
-if(e>arr_size){
+void enqueue(int num){
+if(e>=arr_size){
     cout<<"queue is full";
 }
 else{
@@ -15,7 +15,7 @@ else{
 
 }
 
-void Deletion(){
+void Dequeue(){
     if(front>e){
      cout<<"queue is empty ";
     }
@@ -41,20 +41,13 @@ void Display(){
 }
 
 int main(){
-    Insert(1);
-    Insert(2);
-    Insert(3);
-    Insert(4);
-    Insert(5);
-    Deletion();
+    enqueue(1);
+    enqueue(2);
+    enqueue(3);
+    enqueue(4);
+    enqueue(5);
     Display();
-    Deletion();
-    Deletion();
-    Deletion();
-    Deletion();
-    Deletion();
-    Insert(1);
-    Insert(2);
+    Dequeue();
     Display();
-
+   
 }

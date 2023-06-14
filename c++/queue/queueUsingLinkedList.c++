@@ -7,7 +7,7 @@ struct Node{
 Node*front;
 Node*e;
 
-void Insert(int num){
+void enqueue(int num){
 Node*p=new Node();
 p->val=num;
 p->next=NULL;
@@ -20,7 +20,7 @@ e->next=p;
 e=p;
 }
 
-void Deletion(){
+void Dequeue(){
     if(front==NULL){
         cout<<"empty queue"<<"\n";
     }
@@ -49,11 +49,9 @@ cout<<"\n";
 }
 
 int main(){
-Insert(1);
-Insert(2);
+enqueue(1);
+enqueue(2);
 Display();
-Deletion();
-Deletion();
-Deletion();
+Dequeue();
 Display();
 }
